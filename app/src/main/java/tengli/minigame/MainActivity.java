@@ -39,6 +39,8 @@ public class MainActivity extends AppCompatActivity {
                 }
                 TextView winnerMessage = (TextView) findViewById(R.id.winnerMessage);
                 winnerMessage.setText(winner + " has won!");
+                LinearLayout layout = (LinearLayout)findViewById(R.id.playAgainLayout);
+                layout.setVisibility(View.VISIBLE);
             } else {
                 boolean gameIsOver = true;
                 for (int counterState : gameState) {
@@ -47,6 +49,8 @@ public class MainActivity extends AppCompatActivity {
                 if (gameIsOver) {
                     TextView winnerMessage = (TextView) findViewById(R.id.winnerMessage);
                     winnerMessage.setText("Draw!");
+                    LinearLayout layout = (LinearLayout)findViewById(R.id.playAgainLayout);
+                    layout.setVisibility(View.VISIBLE);
                 }
             }
         }
