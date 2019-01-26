@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
         ImageView curGrid = (ImageView) view;
         int gridCounter = Integer.parseInt(curGrid.getTag().toString());
         if(gameState[gridCounter] == 2) {
+            gameState[gridCounter] = currentPlayer;
             if (currentPlayer == 0) {
                 curGrid.setTranslationY(-1000f);
                 curGrid.setImageResource(R.drawable.lt);
