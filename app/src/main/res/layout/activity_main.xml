@@ -118,4 +118,12 @@
             android:onClick="moveChess"
             android:tag="8" />
     </android.support.v7.widget.GridLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/winnerMessage"
+        android:layout_gravity="center_horizontal"
+        android:textSize="30sp" />
 </android.support.constraint.ConstraintLayout>
